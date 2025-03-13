@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 # Setup the OpenAI client to use either Azure, OpenAI.com, or Ollama API
 load_dotenv(override=True)
 API_HOST = os.getenv("API_HOST")
-
+print("El api_host es "+API_HOST)
 if API_HOST == "azure":
 
     token_provider = azure.identity.get_bearer_token_provider(
@@ -26,7 +26,6 @@ elif API_HOST == "ollama":
     MODEL_NAME = os.environ["OLLAMA_MODEL"]
 
 elif API_HOST == "github":
-
     client = openai.OpenAI(base_url="https://models.inference.ai.azure.com", api_key=os.environ["GITHUB_TOKEN"])
     MODEL_NAME = os.environ["GITHUB_MODEL"]
 

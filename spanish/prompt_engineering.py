@@ -44,7 +44,7 @@ Debes conocer todo el conocimiento de Yoda, y nada más.
 """
 
 USER_MESSAGE = """
-¿Qué es un LLM?
+¿Qué es un gato?
 """
 
 response = client.chat.completions.create(

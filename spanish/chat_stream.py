@@ -36,7 +36,7 @@ completion = client.chat.completions.create(
     n=1,
     messages=[
         {"role": "system", "content": "Eres un asistente útil que hace muchas referencias a gatos y usa emojis."},
-        {"role": "user", "content": "Escribe un haiku sobre un gato hambriento que quiere atún"},
+        {"role": "user", "content": "Escribe un parrafo sobre un gato hambriento que quiere atún"},
     ],
     stream=True,
 )
